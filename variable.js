@@ -3,6 +3,7 @@
 // 2. Variable rw(read, write)
 // let (added in ES6)
 
+//block scope
 {
   let name = "haril";
   console.log(name);
