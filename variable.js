@@ -1,6 +1,6 @@
 "use strict";
 
-// 2. Variable
+// 2. Variable rw(read, write)
 // let (added in ES6)
 
 {
