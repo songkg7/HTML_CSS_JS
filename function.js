@@ -137,7 +137,7 @@ randomQuiz("love you", printYes, printNo);
 // };
 
 const simplePrint = () => console.log("simplePrint!");
-const add = (a, b) => a + b;
+// const add = (a, b) => a + b;
 const simpleMultiply = (a, b) => {
   //do something more
   return a * b;
@@ -148,3 +148,33 @@ const simpleMultiply = (a, b) => {
   console.log("IIFE");
 })();
 // 함수를 선언과 동시에 호출
+
+// function calculate(command, a, b)
+// command: add, substract, divide, multiply, remainder
+// function calculate(command, a, b) {
+//   console.log(command(a, b));
+// }
+// const add = (a, b) => a + b;
+// const substract = (a, b) => a - b;
+// const divide = (a, b) => a / b;
+// const multiply = (a, b) => a * b;
+// const remainder = (a, b) => a % b;
+
+// calculate(add, 15, 27);
+
+// Answer 1
+function calculate(command, a, b) {
+  switch (command) {
+    case "add":
+      return a + b;
+    case "substract":
+      return a - b;
+    case "divide":
+      return a / b;
+    case "multiply":
+      return a * b;
+      dafault: throw Error("unknown command");
+  }
+}
+
+console.log(calculate("add", 3, 4));
